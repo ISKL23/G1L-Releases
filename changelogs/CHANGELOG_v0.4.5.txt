@@ -1,0 +1,20 @@
+v0.4.5
+
+Fixes
+- Improved support for Ultra+ style archives. G1L now installs the pak
+  triplet, the UltraPlusExtensions UE4SS mod and required Mods\shared support
+  files, while skipping bundled UE4SS/proxy files and UE4SS built-in debug
+  mods from the archive.
+- Added a diagnostic log warning when the launcher is running as administrator.
+  This explains the Windows drag-and-drop issue caused by elevated launcher /
+  game executables.
+- The "Open UE4SS page" button now opens the GitHub experimental-latest release
+  instead of the old Nexus UE4SS page.
+
+Localization
+- Added German interface language.
+
+Notes
+- Do not run G1L or the game exe as administrator unless you have a specific
+  reason. Windows can block drag-and-drop from normal Explorer windows into an
+  elevated app.

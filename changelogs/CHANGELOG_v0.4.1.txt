@@ -1,0 +1,38 @@
+v0.4.1
+
+Fixes
+- Fixed UE4SS debug GUI instability with Steam Overlay, Alt-Tab, and focus changes.
+- When "Show the UE4SS debug console" is enabled, G1L now sets UE4SS to:
+  RenderMode = GameViewportClientTick
+- This avoids the unsafe ExternalThread render mode that could freeze or crash
+  Gothic 1 Remake when the UE4SS Debugging Tools window was focused or when
+  the Steam overlay appeared over it.
+- When the UE4SS debug console is disabled, G1L now restores:
+  RenderMode = ExternalThread
+- This clears the stale hidden ImGui viewport hook left by older builds and may
+  prevent exit-time crashes with UE4SS installed but debug UI turned off.
+- UE4SS developer/bp-loader built-ins are no longer enabled when they are not
+  needed. Keybinds stays disabled, and BPModLoader/BPML are enabled only when
+  Content\Paks\LogicMods contains Blueprint logic mods. This reduces unnecessary
+  UE4SS hooks during normal Lua/DLL, pak, movie, or vanilla launches.
+- The built-in mod config editor now detects Lua config files such as
+  Scripts\config.lua without exposing regular Lua scripts like main.lua.
+  This covers mods such as LockpickSettings.
+- Non-INI configs now open directly in the raw text editor instead of showing
+  an empty structured settings grid first.
+- Mod rows now keep a stable right-side action area, so hover buttons no longer
+  push or overlap long mod names and config icons.
+- Config editor tabs now have safer spacing so "Settings" and "Text" labels do
+  not look clipped.
+- Config editor tabs now use a fixed text template instead of the default WPF
+  header presenter, preventing label baseline clipping on some fonts/scales.
+- Updated launcher branding assets: app icon, G1L logo, and Gothic/ISKL banner.
+- Updated the G1L logo and app icon again with the new IBL-style asset.
+
+Notes
+- The UE4SS debug GUI is still enabled when requested.
+- The GUI may appear a few seconds later than before. This is expected because
+  UE4SS now waits for the game viewport tick instead of rendering from a
+  separate thread.
+- Ordinary gameplay/debug checks passed: UE4SS window focus, Alt-Tab, Steam
+  Overlay, new game/save load, and normal game exit.

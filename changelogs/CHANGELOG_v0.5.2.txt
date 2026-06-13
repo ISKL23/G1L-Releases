@@ -1,0 +1,29 @@
+v0.5.2
+
+New
+- BP plugin mod support (SimpleModLoader ecosystem, e.g. "Longer Days").
+  These mods ship as a whole UE plugin folder — <name>.uplugin, Config\*.ini
+  and a pak triplet — that must live under G1R\Mods\<name>\ with its
+  structure intact. G1L now detects the .uplugin, installs the complete
+  folder to the right place, and manages it like any other mod (enable,
+  disable, open folder, remove). Previously the pak files were extracted
+  into ~mods, which broke these mods.
+- BP plugin configs are editable. Files like Config\Engine.ini now show up
+  in the built-in config editor (the gear icon on the mod row).
+- BP plugin metadata. Name, version, author and description are read from
+  the .uplugin and shown on the mod row and tooltip.
+- Manually installed BP plugins (extracted by hand into G1R\Mods\) are
+  detected and adopted automatically, with a working toggle.
+
+Interface
+- About: feature cards no longer "jump up" while the page scrolls at normal
+  window sizes (removed the hover position animation that caused it).
+- Profile toolbar buttons (Load / Save / Save as / Export / Import): icon
+  and label are now properly centered on one line.
+- Bottom status bar: all segments share one font and baseline.
+
+Notes
+- BP plugin mods are marked with a "BP" chip in the mod list. They need
+  SimpleModLoader to actually run — install it first.
+- BP plugins are managed by file presence (like pak mods); they do not
+  participate in the UE4SS load order.

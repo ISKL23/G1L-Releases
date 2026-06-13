@@ -1,0 +1,43 @@
+v0.5.0
+
+New
+- Home dashboard. The launcher now opens on a proper front page: game card
+  with art and game version, big PLAY button, one-line UE4SS status,
+  enabled/installed mod counters, active profile and a "recently installed"
+  list. Mod management moved to its own sidebar tab.
+- SimpleModLoader (BP mod loader) support. Drop the SML archive into G1L and
+  the SML.pak/.ucas/.utoc triplet is installed to Content\Paks (its required
+  root location, NOT ~mods) and managed like any other mod: enable, disable,
+  open folder, remove.
+- Startup health check. G1L now warns with a one-line banner when something
+  in the environment will break modding: missing Microsoft Visual C++ x64
+  runtime, a UE4SS install whose dwmapi.dll proxy is gone, or a foreign DLL
+  injector (e.g. ReShade) sitting next to the game exe.
+- "Copy diagnostics" button in About: copies launcher/OS versions, paths,
+  UE4SS state, the mod list and the log tail to the clipboard — paste it
+  into a bug report.
+
+Interface
+- Mod rows can now show a second dimmed line (author · description) when the
+  mod ships metadata; rows without metadata stay compact single-liners.
+- Readable mod-type chips (Lua / DLL / Pak / Movie / Loader) instead of
+  colored dots, in both lists.
+- The profile toolbar only appears on the Mods and Profiles tabs.
+- Mod config editor: the Settings/Text switch is now a proper segmented
+  control, and the Text editor gained a line-number gutter.
+- New hand-baked stone texture under the whole UI plus a subtle corner
+  vignette — the launcher finally looks like Gothic, not like a flat theme.
+- Empty-state hints in both mod lists ("drag a mod here…").
+
+Fixes
+- Drag-and-drop now works even when G1L runs as administrator. The launcher
+  whitelists the Windows file-drop messages (UIPI), so dragging a mod archive
+  from a normal Explorer window into an elevated launcher no longer silently
+  fails.
+- Verified install of UE4SS C++/DLL mods shipped in the nested
+  ue4ss\Mods\<name>\ layout (e.g. "Show Item Base Value").
+
+Notes
+- SimpleModLoader already enables the dev console, so you do not need a
+  separate console-enabler mod alongside it.
+- All new interface text is localized in all 10 languages.

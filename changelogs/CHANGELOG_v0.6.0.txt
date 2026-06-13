@@ -1,0 +1,24 @@
+v0.6.0
+
+New
+- Mod packs (.g1lpack). Export your whole setup — the mod files themselves
+  plus load order and enabled/disabled state — into one shareable archive
+  from the Profiles tab. A friend imports it with one click and every mod
+  lands in its correct folder on their install: UE4SS mods, pak mods,
+  BP plugins, loaders, movie replacements, ReShade presets, and even
+  Engine.ini tweaks (merged into their user config, not overwriting it).
+  Note: only share mods whose authors allow redistribution.
+- "Check for updates on Nexus" now works for mods without any metadata.
+  Every file downloaded from Nexus carries the mod id and version in its
+  file name ("LongerDays-79-0-0-1-…" = mod 79, v0.0.1). G1L now reads that
+  at install time and remembers it, so update checks and "Open on Nexus"
+  work for anything installed by dropping the original Nexus download —
+  no manifest.json required, no author cooperation needed.
+
+Notes
+- The Nexus id is captured when a mod is INSTALLED through G1L from an
+  archive that still has its original Nexus file name. Mods installed
+  before this version (or from renamed archives) still have no id —
+  reinstall the original download once to link them.
+- Mod packs install missing mods and apply the pack's profile; mods you
+  already have are replaced by the pack's version.

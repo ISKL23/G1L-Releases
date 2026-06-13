@@ -1,0 +1,46 @@
+v0.5.5
+
+New
+- Pak mods can now be disabled and re-enabled. Toggling renames the whole
+  IoStore set (.pak/.ucas/.utoc/.sig) with a ".disabled" suffix, so the
+  engine stops loading it — nothing is deleted, and re-enabling is instant.
+  Works from the usual drag between Enabled/Available (or double-click).
+- Engine.ini tweak mods are supported (e.g. "Better Graphics", "Remove
+  Grass"). G1L merges the mod's lines into your real
+  %LOCALAPPDATA%\G1R\Saved\Config\Windows\Engine.ini as a clearly marked
+  block. Disable/uninstall removes exactly that block: your own settings
+  and other Engine.ini mods are never touched, and several such mods can
+  coexist without manual merging.
+- ReShade preset mods are supported. Preset .ini files are detected by
+  content and installed next to the game exe (Binaries\Win64), managed
+  like any other mod. ReShade itself still needs to be installed
+  separately.
+- Pak mods keep their folder name. An archive like
+  "NH_Tattoo_Vanilla\pakchunk60-Windows_P.pak" installs into
+  ~mods\NH_Tattoo_Vanilla\ and shows up as "NH_Tattoo_Vanilla" instead of
+  a meaningless pakchunk name.
+
+- Missing-dependency warnings. G1L now knows which loader each mod needs
+  and warns when it's absent: BP plugins need SimpleModLoader, fyryNy
+  plugins need fyryNy's Loader, ReShade presets need ReShade, Lua/DLL mods
+  need UE4SS. Affected mods get a yellow warning icon with a tooltip, and
+  a banner explains the first problem with an "Open mod page" button —
+  no more silently dead mods.
+
+Fixes
+- Read-only files inside mod archives (some mod pages even recommend
+  marking Engine.ini read-only) no longer break installation cleanup,
+  toggling or deletion — the flag is cleared where needed.
+- Engine.ini / ReShade mods get readable names: the Nexus download suffix
+  is stripped ("Remove Grass-70-1-1780938104" → "Remove Grass").
+- Pak mods in sub-folders of Content\Paks\~mods are now detected (the
+  scanner previously only looked at the top level).
+- Hand-installed mod paks dropped straight into Content\Paks (root) now
+  show up in the launcher too. Base-game paks (G1R*, global*) and the
+  SimpleModLoader core are recognised and never listed as mods.
+
+Notes
+- Disabled pak mods appear in the Available list; drag them back to
+  Enabled to turn them on again.
+- Engine.ini tweaks appear with a "Tweak" chip; the gear icon opens your
+  actual Engine.ini for fine-tuning.
