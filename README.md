@@ -28,7 +28,8 @@ Full feature list and screenshots: **[Nexus Mods page](https://www.nexusmods.com
 
 | Version | Status | Highlights |
 |--------|--------|-----------|
-| **0.7.3** | ✅ **Latest — recommended** | Official Nexus API update checks (free API key), `+` multi-select installer, no-BOM Lua config saves, crash diagnostics & resilient startup |
+| **0.7.4** | ✅ **Latest — recommended** | Smarter update detection (reads the latest file version on Nexus), dismissible version-status chips, own Gothic artwork |
+| 0.7.3 | Superseded | Official Nexus API update checks (free API key), `+` multi-select installer, no-BOM Lua config saves, crash diagnostics & resilient startup |
 | 0.7.0 | Superseded | Manual Nexus metadata, last-session launch status |
 | 0.6.6 | Superseded | In-script Lua config editing, lower idle CPU |
 | 0.6.5 | Superseded | Shared support libraries, expanded diagnostics |
