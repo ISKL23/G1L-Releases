@@ -28,7 +28,11 @@ Full feature list and screenshots: **[Nexus Mods page](https://www.nexusmods.com
 
 | Version | Status | Highlights |
 |--------|--------|-----------|
-| **0.6.0** | ✅ **Latest — recommended** | Mod packs (`.g1lpack`), Nexus update tracking without metadata |
+| **0.7.3** | ✅ **Latest — recommended** | Official Nexus API update checks (free API key), `+` multi-select installer, no-BOM Lua config saves, crash diagnostics & resilient startup |
+| 0.7.0 | Superseded | Manual Nexus metadata, last-session launch status |
+| 0.6.6 | Superseded | In-script Lua config editing, lower idle CPU |
+| 0.6.5 | Superseded | Shared support libraries, expanded diagnostics |
+| 0.6.0 | Superseded | Mod packs (`.g1lpack`), Nexus update tracking without metadata |
 | 0.5.5 | Superseded | Engine.ini tweaks, ReShade presets, dependency warnings, read-only fixes |
 | 0.5.2 | Superseded | BP plugin (SimpleModLoader) support, UI fixes |
 | 0.5.0 | Superseded | Home dashboard, health check, SimpleModLoader, admin drag-and-drop fix |
