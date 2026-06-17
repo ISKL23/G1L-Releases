@@ -1,67 +1,79 @@
-# G1L — ISKL Gothic 1 Remake Launcher · Downloads
+# G1L - ISKL Gothic 1 Remake Launcher - Downloads
 
-Public downloads and version history for **G1L**, a portable mod launcher and manager for
+Public downloads for **G1L**, a portable mod launcher and manager for
 **Gothic 1 Remake** (Unreal Engine 5).
 
-> ### ⬇️ [Download the latest version](https://github.com/ISKL23/G1L-Releases/releases/latest)
+> ### Download the latest protected build
 >
-> Or get it on **[Nexus Mods](https://www.nexusmods.com/gothic1remake/mods/37)** (primary page).
+> https://github.com/ISKL23/G1L-Releases/releases/latest
+>
+> Primary page on Nexus Mods:
+> https://www.nexusmods.com/gothic1remake/mods/37
 
-The source code is **not** public — this repository only hosts the released builds.
+The source code is **not public**. This repository only hosts official compiled
+release builds.
+
+---
+
+## Current release policy
+
+Only the newest protected build is distributed here.
+
+Older public binaries have been withdrawn from GitHub downloads. There have
+already been attempts to copy and reuse the author's work, so unprotected old
+builds are no longer offered as downloadable releases.
+
+Starting with **G1L 0.7.5**, public builds include source-code protection. This
+is intended to prevent casual decompilation, code copying, rebranding, and
+unauthorized redistribution of the launcher.
+
+Please respect the work behind G1L. Do not decompile, copy, modify, re-upload,
+mirror, bundle, or redistribute the launcher outside the official pages.
+
+---
+
+## Latest version
+
+| Version | Status | Notes |
+|--------|--------|-------|
+| **0.7.5** | Latest protected build | Loose game-file mod support, .rar extraction fix, ProjectRoot mod-pack support, protected Core release build |
+
+Older versions are not supported and are no longer available for download.
 
 ---
 
 ## What it is
 
-Drop a mod archive or folder onto the window and G1L installs it exactly where the game
-expects it. It handles every Gothic 1 Remake mod type — UE4SS Lua/DLL scripts, pak mods,
-BP plugins (SimpleModLoader), movie replacements, Engine.ini tweaks, ReShade presets and
-fyryNy loader/plugins — plus mod packs, update tracking, dependency warnings, profiles,
-save backups and an 11-language interface. No .NET install required; everything ships in a
-single portable `.exe`.
+Drop a mod archive or folder onto the window and G1L installs it exactly where
+the game expects it. It handles Gothic 1 Remake mod layouts including UE4SS
+Lua/DLL scripts, pak mods, BP plugins (SimpleModLoader), movie replacements,
+loose project image/texture replacements, Engine.ini tweaks, ReShade presets,
+fyryNy loader/plugins, mod packs, update tracking, dependency warnings,
+profiles, save backups, diagnostics, and an 11-language interface.
 
-Full feature list and screenshots: **[Nexus Mods page](https://www.nexusmods.com/gothic1remake/mods/37)**.
+No .NET install is required; everything ships in a single portable `.exe`.
 
----
-
-## Version history
-
-| Version | Status | Highlights |
-|--------|--------|-----------|
-| **0.7.4** | ✅ **Latest — recommended** | Smarter update detection (reads the latest file version on Nexus), dismissible version-status chips, own Gothic artwork |
-| 0.7.3 | Superseded | Official Nexus API update checks (free API key), `+` multi-select installer, no-BOM Lua config saves, crash diagnostics & resilient startup |
-| 0.7.0 | Superseded | Manual Nexus metadata, last-session launch status |
-| 0.6.6 | Superseded | In-script Lua config editing, lower idle CPU |
-| 0.6.5 | Superseded | Shared support libraries, expanded diagnostics |
-| 0.6.0 | Superseded | Mod packs (`.g1lpack`), Nexus update tracking without metadata |
-| 0.5.5 | Superseded | Engine.ini tweaks, ReShade presets, dependency warnings, read-only fixes |
-| 0.5.2 | Superseded | BP plugin (SimpleModLoader) support, UI fixes |
-| 0.5.0 | Superseded | Home dashboard, health check, SimpleModLoader, admin drag-and-drop fix |
-| 0.4.5 | Superseded | Ultra+ archive handling, German localization |
-| 0.4.1 | Superseded | Stability and install fixes |
-| 0.4.0 | Superseded | Multi-language interface, profiles, config editor |
-
-**Always use the newest version.** Older builds are kept here for archive only and are not
-supported.
-
-> ⚠️ **Versions before 0.4.0 are not published here and are no longer functional** with the
-> current Gothic 1 Remake / UE4SS. Do not use them.
+Full feature list and screenshots:
+https://www.nexusmods.com/gothic1remake/mods/37
 
 ---
 
-## Usage & redistribution
+## Usage and redistribution
 
-G1L is **free to download and use** from its official sources — this repository and the
-[Nexus Mods page](https://www.nexusmods.com/gothic1remake/mods/37).
+G1L is free to download and use from its official sources:
 
-Please do **not** re-upload, mirror, modify, or bundle it elsewhere. If you want to share it,
-link to the official pages. See [LICENSE](LICENSE) for the full terms.
+- Nexus Mods: https://www.nexusmods.com/gothic1remake/mods/37
+- GitHub latest release: https://github.com/ISKL23/G1L-Releases/releases/latest
+
+If you want to share G1L, link to the official pages. See [LICENSE](LICENSE)
+for the full terms.
 
 ---
 
-By **ISKL (ISKLL)** ·
-[Nexus](https://www.nexusmods.com/profile/ISKLL) ·
-[YouTube](https://www.youtube.com/@ISKL) ·
-[Reddit](https://www.reddit.com/user/IISKLL/) ·
-[Telegram](https://t.me/FlashForward23) ·
-[Boosty](https://boosty.to/iskl)
+By **ISKL (ISKLL)**
+
+Nexus: https://www.nexusmods.com/profile/ISKLL  
+YouTube: https://www.youtube.com/@ISKL  
+Reddit: https://www.reddit.com/user/IISKLL/  
+Telegram: https://t.me/FlashForward23  
+Boosty: https://boosty.to/iskl

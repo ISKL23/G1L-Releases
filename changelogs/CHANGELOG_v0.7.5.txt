@@ -1,0 +1,14 @@
+Version 0.7.5
+
+New:
+- Added conservative support for loose game-file replacement mods: G1R\Images\..., G1R\Story\..., G1R\Textures\..., or root Images/Story/Textures folders.
+- Loose game-file mods are shown as type "File" in the mod list.
+- Loose game-file mods use the managed loose-file lifecycle: originals are backed up, disabling restores the original or removes newly added files, and enabling restores the mod payload.
+- Mod packs (.g1lpack) now preserve loose game-file mods with a ProjectRoot/ logical path, so packs import correctly across different game install paths.
+
+Protection:
+- Added source-code protection to the public release build. Please respect the work behind G1L: do not decompile, copy, modify or redistribute the launcher outside the official release pages.
+
+Fixes:
+- Fixed .rar extraction fallback for non-solid archives when native 7-Zip is not available.
+- Loose-file detection intentionally ignores protected layouts such as Binaries, Mods, Content\Paks, Content\Movies, UE4SS, pak, BP, movie, ReShade and Engine.ini layouts.
