@@ -3,7 +3,7 @@
 Public downloads for **G1L**, a portable mod launcher and manager for
 **Gothic 1 Remake** (Unreal Engine 5).
 
-> ### Download the latest protected build
+> ### Download the latest version
 >
 > https://github.com/ISKL23/G1L-Releases/releases/latest
 >
@@ -17,18 +17,14 @@ release builds.
 
 ## Current release policy
 
-Only the newest protected build is distributed here.
+Only the newest build is distributed here.
 
 Older public binaries have been withdrawn from GitHub downloads. There have
-already been attempts to copy and reuse the author's work, so unprotected old
-builds are no longer offered as downloadable releases.
+already been attempts to copy and reuse the author's work, so old builds are no
+longer offered as downloadable releases.
 
-Starting with **G1L 0.7.5**, public builds include source-code protection. This
-is intended to prevent casual decompilation, code copying, rebranding, and
-unauthorized redistribution of the launcher.
-
-Please respect the work behind G1L. Do not decompile, copy, modify, re-upload,
-mirror, bundle, or redistribute the launcher outside the official pages.
+Please respect the work behind G1L. Do not copy, modify, re-upload, mirror,
+bundle, or redistribute the launcher outside the official pages.
 
 ---
 
@@ -36,7 +32,7 @@ mirror, bundle, or redistribute the launcher outside the official pages.
 
 | Version | Status | Notes |
 |--------|--------|-------|
-| **0.7.5** | Latest protected build | Loose game-file mod support, .rar extraction fix, ProjectRoot mod-pack support, protected Core release build |
+| **0.7.5** | Latest - recommended | Loose game-file mod support, .rar extraction fix, ProjectRoot mod-pack support |
 
 Older versions are not supported and are no longer available for download.
 
