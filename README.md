@@ -17,11 +17,9 @@ release builds.
 
 ## Current release policy
 
-Only the newest build is distributed here.
-
-Older public binaries have been withdrawn from GitHub downloads. There have
-already been attempts to copy and reuse the author's work, so old builds are no
-longer offered as downloadable releases.
+Builds from **0.7.5 onward are obfuscated** and remain available here. Earlier,
+non-obfuscated builds were withdrawn from GitHub downloads after attempts to copy
+and reuse the author's work.
 
 Please respect the work behind G1L. Do not copy, modify, re-upload, mirror,
 bundle, or redistribute the launcher outside the official pages.
@@ -30,11 +28,12 @@ bundle, or redistribute the launcher outside the official pages.
 
 ## Latest version
 
-| Version | Status | Notes |
-|--------|--------|-------|
-| **0.7.6** | Latest - recommended | In-game console toggle (cheats & commands), Performance Lua Mod Loader support, UE4SS nested-install fix, loose game-file mods, .rar extraction fix |
+| Version | Status | Download | Notes |
+|--------|--------|----------|-------|
+| **0.7.6** | Latest - recommended | [Download](https://github.com/ISKL23/G1L-Releases/releases/tag/v0.7.6) | In-game console toggle (cheats & commands), Performance Lua Mod Loader support, UE4SS nested-install fix, loose game-file mods, .rar extraction fix |
+| 0.7.5 | Available (obfuscated) | [Download](https://github.com/ISKL23/G1L-Releases/releases/tag/v0.7.5) | Loose game-file mod support, UE4SS nested-install fix, .rar extraction fix, ProjectRoot mod-pack support |
 
-Older versions are not supported and are no longer available for download.
+Builds before 0.7.5 (non-obfuscated) have been withdrawn and are no longer available.
 
 ---
 
