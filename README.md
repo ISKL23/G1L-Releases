@@ -32,7 +32,7 @@ bundle, or redistribute the launcher outside the official pages.
 
 | Version | Status | Notes |
 |--------|--------|-------|
-| **0.7.5** | Latest - recommended | Loose game-file mod support, .rar extraction fix, ProjectRoot mod-pack support |
+| **0.7.6** | Latest - recommended | In-game console toggle (cheats & commands), Performance Lua Mod Loader support, UE4SS nested-install fix, loose game-file mods, .rar extraction fix |
 
 Older versions are not supported and are no longer available for download.
 
@@ -42,10 +42,10 @@ Older versions are not supported and are no longer available for download.
 
 Drop a mod archive or folder onto the window and G1L installs it exactly where
 the game expects it. It handles Gothic 1 Remake mod layouts including UE4SS
-Lua/DLL scripts, pak mods, BP plugins (SimpleModLoader), movie replacements,
+Lua/DLL scripts, Performance Lua Mod Loader (PLuaModLoader) child mods, pak mods, BP plugins (SimpleModLoader), movie replacements,
 loose project image/texture replacements, Engine.ini tweaks, ReShade presets,
 fyryNy loader/plugins, mod packs, update tracking, dependency warnings,
-profiles, save backups, diagnostics, and an 11-language interface.
+profiles, save backups, diagnostics, an opt-in in-game console, and an 11-language interface.
 
 No .NET install is required; everything ships in a single portable `.exe`.
 
